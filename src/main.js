@@ -23,7 +23,9 @@ app.use('/api/v1/archive', archiveRoutes);
 
 
 app.listen(port, ()=>{
-    Mongoose.connect("mongodb+srv://aaronx:passcode@cluster0.jxedhhz.mongodb.net/crm_db")
+
+    //Your mongo client goes here
+    Mongoose.connect("******")
             .then(()=>{
                 console.log("Server connected to crm_db successfully");
             })
